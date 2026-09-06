@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beemoe's Guide – Star Sailor's Edition">
+  <title>Characters | Beemoe's Guide</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><span>✦</span> BEEMOE'S GUIDE</a>
+  <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+  <nav id="navLinks">
+    <a class="active" href="index.html">Characters</a>
+    <a href="team-builder.html">Team Builder</a>
+    <a href="#memory-pieces">Memory Pieces</a>
+    <a href="#gear">Gear</a>
+    <a href="#artifacts">Artifacts</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="page-head">
+    <p class="eyebrow">ROSTER DATABASE</p>
+    <h1>Star Sailors Roster</h1>
+    <p>
+      Browse Adventurer classes, Battle Partners, and Assist Partners. Filter by element, combat role, and time trait.
+    </p>
+  </section>
+
+  <section class="database-toolbar">
+    <div class="database-tabs" id="typeTabs">
+      <button class="db-tab active" data-type="all">All</button>
+      <button class="db-tab" data-type="adventurer">Adventurer Classes</button>
+      <button class="db-tab" data-type="battle">Battle Partners</button>
+      <button class="db-tab" data-type="assist">Assist Partners</button>
+    </div>
+
+    <div class="filter-grid">
+      <label>
+        <span>Element</span>
+        <select id="elementFilter">
+          <option value="all">All Elements</option>
+          <option>Fire</option>
+          <option>Wind</option>
+          <option>Earth</option>
+          <option>Water</option>
+          <option>Dark</option>
+          <option>Light</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Role</span>
+        <select id="roleFilter">
+          <option value="all">All Roles</option>
+          <option>Attacker</option>
+          <option>Defender</option>
+          <option>Debuffer</option>
+          <option>Supporter</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Time Trait</span>
+        <select id="timeFilter">
+          <option value="all">All Time Traits</option>
+          <option>Daylight</option>
+          <option>Midnight</option>
+          <option>Twilight</option>
+        </select>
+      </label>
+
+      <label class="search-box">
+        <span>Search</span>
+        <input id="searchInput" type="search" placeholder="Search character...">
+      </label>
+    </div>
+  </section>
+
+  <section>
+    <div class="results-bar">
+      <p><strong id="resultCount">0</strong> entries found</p>
+      <a class="mini-link" href="team-builder.html">Open Team Builder →</a>
+    </div>
+    <div id="characterGrid" class="character-grid"></div>
+  </section>
+
+  <section class="info-strip">
+    <div>
+      <span class="info-kicker">ELEMENTS</span>
+      <strong>Fire · Wind · Earth · Water · Dark · Light</strong>
+    </div>
+    <div>
+      <span class="info-kicker">ROLES</span>
+      <strong>Attacker · Defender · Debuffer · Supporter</strong>
+    </div>
+    <div>
+      <span class="info-kicker">TIME TRAITS</span>
+      <strong>Daylight · Midnight · Twilight</strong>
+    </div>
+  </section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
