@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Characters | Beemoe's Guide</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><span>✦</span> BEEMOE'S GUIDE</a>
+  <nav><a href="index.html" class="active">Characters</a><a href="#">Gear</a><a href="#">Artifacts</a></nav>
+</header>
+
+<main class="wrap">
+  <section class="page-head">
+    <p class="eyebrow">STAR SAILORS DATABASE</p>
+    <h1>Characters</h1>
+    <p>Select a character to view their overview, skills, recommended gear, teams, and showcase.</p>
+  </section>
+
+  <section>
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="Fire">Fire</button>
+      <button class="filter" data-filter="Water">Water</button>
+      <button class="filter" data-filter="Wind">Wind</button>
+    </div>
+    <div id="characterGrid" class="character-grid"></div>
+  </section>
+</main>
+
+<script src="js/characters.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
